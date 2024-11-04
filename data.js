@@ -38,9 +38,9 @@ console.log(animal)
  * Step 4 - Review
  *
  * 1. What are the different ways you can access properties on objects?
- *
+ * dot notation and bracket
  * 2. What are the different ways of accessing elements on arrays?
- *
+ *bracket notation
  * *******************************************************************
  */
 
@@ -56,15 +56,46 @@ console.log(animal)
 //////////////////////////////////////////////////////////////////////
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+var animals = []
+animals.push(animal)
+console.log(animals)
+animals.push(duck)
+var duck = {
+  species: 'duck',
+  name: 'Jerome',
+  noises: ['quack', 'honk', 'sneeze', 'woosh' ]
+}
+animals.push(duck)
+console.log(animals)
 
+var pig = {
+  species: 'pig',
+name: 'Charlotte',
+noises: ['oink', 'sneeze']
+}
 
+var bat = {
+  species: 'bat',
+name: 'Dave',
+noises: ['bark', 'sneeze']
+}
 
+console.log(animals)
+
+console.log(animals.length - 1)
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+//choosing an array, which is a list or bucket for similar items to be stored
 
+var friends = []
 
+function getRandom(array){
+  for(let i = 0; i >= array.length - 1; i++){
+    return Math.random(i) += friends['name']
+  }
+}
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
  * move onto Part 2 in the file called "functions.js"
