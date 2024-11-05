@@ -106,6 +106,8 @@ console.log(animals.length)
 
 var friends = []
 
+
+//function should take in 'animals' or just 'array'?
 function getRandom(array){
   for(let i = 0; i >= array.length - 1; i++){
     return Math.random(i) += friends['name']
