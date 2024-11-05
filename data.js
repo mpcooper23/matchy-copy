@@ -108,9 +108,22 @@ var friends = []
 
 
 //function should take in 'animals' or just 'array'?
-function getRandom(array){
+
+//Write a function called `getRandom` that takes our 
+//`animals` array and returns  a random `index` of 
+//the input array, using `Math.random`
+
+//Using a random index from this function that you just created, 
+//get a random animal and add its `name` to `friends`.
+
+//`console.log` `friends`.
+ //8. [ ] Using **bracket notation**, add the `friends` 
+ //list as a **property** also named `friends` on one 
+ //of the animals in the `animals` array
+
+function getRandom(animals){
   for(let i = 0; i >= array.length - 1; i++){
-    return Math.random(i) += friends['name']
+    return Math.random(i) += friends['name'].push(i)
   }
 }
 /**
