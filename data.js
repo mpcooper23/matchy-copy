@@ -69,7 +69,7 @@ console.log(animal)
 var animals = []
 animals.push(animal)
 console.log(animals)
-animals.push(duck)
+
 var duck = {
   species: 'duck',
   name: 'Jerome',
@@ -78,6 +78,8 @@ var duck = {
 animals.push(duck)
 console.log(animals)
 
+//creating two more animal objects with species, name, and an array of
+//two noises
 var pig = {
   species: 'pig',
 name: 'Charlotte',
@@ -87,12 +89,15 @@ noises: ['oink', 'sneeze']
 var bat = {
   species: 'bat',
 name: 'Dave',
-noises: ['bark', 'sneeze']
+noises: ['screech', 'sneeze']
 }
 
+//adding each of these to animals array
+animals.push(pig, bat)
+//logging animals
 console.log(animals)
-
-console.log(animals.length - 1)
+//logging length of animals
+console.log(animals.length)
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
