@@ -36,8 +36,13 @@ console.log(noises)
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-animal['noises'] = noises
-animal.noises = 'bark'
+
+
+//adding noises to animal object key 'noises'
+animal['noises'] += noises
+//make sure to use += operator when adding new value to key. Am I okay 
+//using dot notation here?
+animal.noises += 'bark'
 console.log(animal)
 /* *******************************************************************
  * Step 4 - Review
@@ -45,7 +50,7 @@ console.log(animal)
  * 1. What are the different ways you can access properties on objects?
  * dot notation and bracket
  * 2. What are the different ways of accessing elements on arrays?
- *bracket notation
+ *bracket notation only, dot notation doesn't work!
  * *******************************************************************
  */
 
