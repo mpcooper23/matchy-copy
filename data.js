@@ -121,11 +121,12 @@ var friends = []
  //list as a **property** also named `friends` on one 
  //of the animals in the `animals` array
 
-function getRandom(animals){
-  for(let i = 0; i >= array.length - 1; i++){
-    return Math.random(i) += friends['name'].push(i)
-  }
+ function getRandom(array){
+  var randomNum = Math.floor(Math.random() * array.length);
+  return randomNum;
 }
+getRandom(animals, )
+//}
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
  * move onto Part 2 in the file called "functions.js"
