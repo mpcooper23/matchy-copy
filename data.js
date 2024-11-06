@@ -122,8 +122,8 @@ var friends = []
  //of the animals in the `animals` array
 
  function getRandom(array){
-  var randomNum = Math.floor(Math.random() * array.length);
-  return randomNum;
+  var random = Math.floor(Math.random() * array.length);
+  return random;
 }
 getRandom(animals, )
 //}
