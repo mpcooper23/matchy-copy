@@ -7,7 +7,7 @@ function addAnimals(ans, id){
               '<h3><b>Species:</b><span class="anSpecies"> ' + ans[i].species + "</span></h3>" +
               '<h3><b>Friends:</b></h3>' +
               '<ul>';
-        if(ans[i].friends){  
+        if(ans[i].friends){  z
             for(var j = 0; j < ans[i].friends.length; j++){
                 mu += "<li>"+ans[i].friends[j]+"</li>";
             }
