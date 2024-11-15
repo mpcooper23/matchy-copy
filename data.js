@@ -43,11 +43,11 @@ console.log(noises)
 //////////////////////////////////////////////////////////////////////
 
 
-//adding noises to animal object key 'noises'
-animal['noises'] += noises
+//using bracket syntax to assign noises to the noises array
+noises.push(animal.noises)
 //make sure to use += operator when adding new value to key. Am I okay 
 //using dot notation here?
-animal.noises += 'bark'
+noises.push('bark')
 console.log(animal)
 /* *******************************************************************
  * Step 4 - Review
