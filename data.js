@@ -23,13 +23,18 @@ console.log(animal);
 //////////////////////////////////////////////////////////////////////
 var noises = [];
 noises[0] = 'meow';
-//using array function to place element at beginning of noises output arr
-noises.unshift('hiss');
+//using array function to place element at end of noises output arr
 noises.push('purr')
+//unshift to place one more string at beginning
+noises.unshift('hiss');
+//adding last element using push
+noises.push('yowl')
+
 //console logging the length of noises
 console.log(noises.length)
 //console logging the last element in noises
 console.log(noises[noises.length - 1])
+//logging whole array
 console.log(noises)
 
 
