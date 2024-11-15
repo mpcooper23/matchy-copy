@@ -43,11 +43,12 @@ console.log(noises)
 //////////////////////////////////////////////////////////////////////
 
 
-//using bracket syntax to assign noises to the noises array
-noises.push(animal.noises)
-//make sure to use += operator when adding new value to key. Am I okay 
-//using dot notation here?
+//assigning animal noises to the noises array using bracket notation
+noises.push(animal['noises'])
+//pushing another noise to animals array 
+//(Using any syntax add another noise to the `noises` property on `animal`.)
 noises.push('bark')
+//logging to check
 console.log(animal)
 /* *******************************************************************
  * Step 4 - Review
@@ -55,7 +56,8 @@ console.log(animal)
  * 1. What are the different ways you can access properties on objects?
  * dot notation and bracket
  * 2. What are the different ways of accessing elements on arrays?
- *bracket notation only, dot notation doesn't work!
+ *bracket notation only, dot notation doesn't work because arrays
+ aren't comprised of key/value pairs!
  * *******************************************************************
  */
 
