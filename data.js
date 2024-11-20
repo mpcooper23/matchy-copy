@@ -44,14 +44,15 @@ console.log(noises)
 
 
 
-//Using **bracket syntax**, assigning the `noises` property on `animal` 
+//Using bracket syntax to assign the `noises` value on `animal` 
 //to `noises` array.
 animal['noises'].push(noises)
 //pushing another noise to animals array 
 //(Using any syntax add another noise to the `noises` property on `animal`.)
-animal.noises.push('bark')
+//animal.noises.push('bark')
 //logging to check
 console.log(animal)
+
 /* *******************************************************************
  * Step 4 - Review
  *
