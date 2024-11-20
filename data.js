@@ -95,13 +95,13 @@ console.log(animals)
 var pig = {
   species: 'pig',
 name: 'Charlotte',
-noises: ['oink', 'sneeze']
+noises: ['oink', 'burp']
 }
 
 var bat = {
   species: 'bat',
 name: 'Dave',
-noises: ['screech', 'sneeze']
+noises: ['screech', 'flap']
 }
 
 //adding each of these to animals array
@@ -117,9 +117,6 @@ console.log(animals.length)
 //choosing an array, which is a list or bucket for similar items to be stored
 
 var friends = []
-
-
-//function should take in 'animals' or just 'array'?
 
 //Write a function called `getRandom` that takes our 
 //`animals` array and returns  a random `index` of 
@@ -137,7 +134,7 @@ var friends = []
   var random = Math.floor(Math.random() * array.length);
   return random;
 }
-getRandom(animals, )
+getRandom(animals)
 //}
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
