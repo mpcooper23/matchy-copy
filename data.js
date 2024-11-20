@@ -28,7 +28,7 @@ noises.push('purr')
 //unshift to place one more string at beginning
 noises.unshift('hiss');
 //adding last element using push
-//animal.noises.push('yowl')
+noises.push('yowl')
 
 //console logging the length of noises
 console.log(noises.length)
