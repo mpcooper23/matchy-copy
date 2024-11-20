@@ -27,8 +27,8 @@ noises[0] = 'meow';
 noises.push('purr')
 //unshift to place one more string at beginning
 noises.unshift('hiss');
-//adding last element using push
-noises.push('yowl')
+//adding last element using bracket syntax
+noises[noises.length] = 'yowl';
 
 //console logging the length of noises
 console.log(noises.length)
