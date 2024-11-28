@@ -135,11 +135,10 @@ var friends = []
   return random;
 }
 
-//getRandom(animals).push(friends)
+let randomAnimal = animals.push(getRandom())//what to put in callback?
 
-for (let i = 0; i < animals.length; i++){
-  getRandom(animals[i]).push(friends)
-}
+animals.push(randomAnimal)
+
 //}
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
