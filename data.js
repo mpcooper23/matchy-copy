@@ -139,7 +139,6 @@ let randomAnimal = animals.push(getRandom())//what to put in callback?
 
 animals.push(randomAnimal)
 
-//}
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
  * move onto Part 2 in the file called "functions.js"
