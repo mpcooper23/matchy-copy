@@ -134,7 +134,12 @@ var friends = []
   var random = Math.floor(Math.random() * array.length);
   return random;
 }
-getRandom(animals)
+
+//getRandom(animals).push(friends)
+
+for (let i = 0; i < animals.length; i++){
+  getRandom(animals[i]).push(friends)
+}
 //}
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
