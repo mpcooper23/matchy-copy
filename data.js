@@ -135,7 +135,9 @@ var friends = []
   return random;
 }
 
-let randomAnimal = animals[(getRandom(animals))].push(friends)
+//let randomAnimal = animals[(getRandom(animals))]
+
+//animals.push(randomAnimal)
 
 
 
