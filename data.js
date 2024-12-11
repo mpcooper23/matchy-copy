@@ -44,7 +44,7 @@ console.log(noises)
 
 
 
-//Using for loop to access noises array and bracket syntax to assign the `noises` value on `animal` 
+/*Using for loop to access noises array and bracket syntax to assign the `noises` value on `animal` 
 //to `noises` array.
 for (let i = 0; i < noises.length; i++){
   animal['noises'].push(noises[i]) 
@@ -53,6 +53,12 @@ for (let i = 0; i < noises.length; i++){
 //(Using any syntax add another noise to the `noises` property on `animal`.)
 animal['noises'].push('bark')
 //logging to check
+console.log(animal)*/
+
+animal.noises = noises;
+
+animal.noises.push('bark');
+
 console.log(animal)
 
 /* *******************************************************************
@@ -135,11 +141,15 @@ var friends = []
   return random;
 }
 
-//let randomAnimal = animals[(getRandom(animals))]
+let randomAnimal = getRandom(animals);
 
-//animals.push(randomAnimal)
+friends.push(animals[randomAnimal].name)
 
+console.log(friends)
 
+animals[0]['friends'] = friends;
+
+console.log(amimals)
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
