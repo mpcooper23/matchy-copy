@@ -45,42 +45,67 @@ return animals[i]
 
 function replace (animals, name, replacement){
 for(let i = 0; i < animals.length; i++){
-    if(animals[i] === name){
+    if(animals[i].name === name){
 animals[i] = replacement
-    }else {animals[i] === animals}
+    }
 }
 }
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+/*
+ 1. Write a function declaration called `remove` with a signature of `remove(animals, name)` that:
+   - Takes 2 parameters, an Array of animals, and a name of an animal on which to perform a search.
+   - If an animal with that name exists within the `animals` Array, remove it.
+
+*/
 function remove(animals, name){
 for(let i = 0; i < animals.length; i++){
-    if(animal[i] === name){
-delete name
+    if(animals[i].name === name){
+animals.splice(i, 1);//use splice method to remove the animal from the array! 
+break;                 //Don't just "delete" (can't use on arrays)
+    }
     }
 }
-}
+
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/**
+ * 
+ * 1. Write a function declaration called `add` with a signature of `add(animals, animal) { //... }` that:
+   - Takes 2 parameter, an Array of animals, and an Object representing a new animal to be added.
+   - Checks that the animal Object has a `name` property with a length > 0.
+   - Checks that the animal Object has a `species` property with a length > 0.
+   - Has a **unique** name, meaning no other animals have that name.
+   - Adds this new Object to the `animals` Array, **only** if all the other conditions pass.
+   - Make sure it works.
+
+This is called **data validation** and it's extremely important in web development!
+ 
+
+ */
+
 function add(animals, animal){
-for(let i = 0; i < animals.length; i++){
-    let animalKeys = animals[i]
-    for(let name in animals[i]){
-    if(animalKeys[animal.name].length > 0){// Checks that the animal Object has a `name` property with a length > 0.
-if(animalKeys[animal.species].length > 0){//Checks that the animal Object has a `species` property with a length > 0.
-    if(animalKeys[animal.name] !== animalKeys[animal.name]){// Has a **unique** name, meaning no other animals have that name.
-animals.push(animal)// Adds this new Object to the `animals` Array, **only** if all the other conditions pass.
+    if(animal.name && animal.name.length > 0 && animal.species && animal.species.length > 0){//checks > 0 conditions
+        let isUnique = true; //returns true
+for(let i = 0; i < animals.length; i++){//for loop to iterate through array and isolate each element (object data, in this case)
+    if(animals[i].name === animal.name){// DOES not have a **unique** name, meaning other animal(s) have that name.
+isUnique = false;
+break; // Adds this new Object to the `animals` Array, **only** if all the other conditions pass.
     }
 }
+if (isUnique){// if isUnique === true (boolean flag variable if '=== true' is just implied with a truthy 'isUnique')
+    animals.push(animal);
+    }
     }
 }
-}
-}
+
 
 /**
  * You did it! You're all done with Matchy!
