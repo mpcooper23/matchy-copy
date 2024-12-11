@@ -12,15 +12,23 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-function search (arr, string){
-for (let i = 0; i < arr.length; i++){
-    if(arr[i] === string){
-return arr[i]
+/* implement a function called search that - Takes a paramater representing an Array of `animals`.
+   - Takes a paramater representing a String, the name of an animal on which to perform a search.
+   - Looks through the `animals` Array, and returns the animal's Object if an animal with that name exists.
+   - Returns `null` if no animal with that name exists
+*/
+
+function search (animals, name){
+for (let i = 0; i < animals.length; i++){
+    if(animals[i].name === name){
+return animals[i]
     }
-  }
 }
-let edSearch = search(animals, "Ed")
-console.log(edSearch)
+        return null
+    }
+
+
+
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
