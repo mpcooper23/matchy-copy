@@ -65,7 +65,7 @@ function remove(animals, name){
 for(let i = 0; i < animals.length; i++){
     if(animals[i].name === name){
 animals.splice(i, 1);//use splice method to remove the animal from the array! 
-break;                 //Don't just "delete" (can't use on arrays)
+break;                 //Don't just "delete" (can't use on arrays) 
     }
     }
 }
